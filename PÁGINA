@@ -1,0 +1,143 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Deportiva</title>
+</head>
+<body>
+    <h1>Bienvenido a la Tienda Deportiva</h1>
+    <p>Encuentra los mejores productos para tu deporte favorito.</p>
+    
+    <h2>Productos Disponibles</h2>
+    
+    <div>
+        <h3>Balón de Fútbol</h3>
+        <img src="https://molten.com.mx/wp/wp-content/uploads/2023/12/Balon-de-Futbol-Molten-UEL-F5U5000-34.png" alt="Balón de Fútbol" width="200">
+        <p>Balón de alta calidad, ideal para entrenamientos y partidos.</p>
+        <p>Precio: $30</p>
+    </div>
+    
+    <div>
+        <h3>Guantes de Boxeo</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q…
+[9:45 p.m., 7/3/2025] Misael: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Deportiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .producto {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Tienda Deportiva</h1>
+    <p>Encuentra los mejores productos para tu deporte favorito.</p>
+    
+    <h2>Productos Disponibles</h2>
+    <div class="productos">
+        <div class="producto">
+            <h3>Balón de Fútbol</h3>
+            <img src="https://molten.com.mx/wp/wp-content/uploads/2023/12/Balon-de-Futbol-Molten-UEL-F5U5000-34.png" alt="Balón de Fútbol">
+            <p>Balón de alta calidad, ideal para entrenamientos y partidos.</p>
+            <p><strong>Precio: $30</strong></p>
+            <button onclick="comprar('Balón de Fútbol', 30)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <h3>Guantes de Boxeo</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMnGXIGPHhyMmVSrcNhz9e-bffY4D5q1NbPg&s" alt="Guantes de Boxeo">
+            <p>Guantes acolchonados para máxima protección en el ring.</p>
+            <p><strong>Precio: $45</strong></p>
+            <button onclick="comprar('Guantes de Boxeo', 45)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <h3>Raqueta de Tenis</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fHOT1YMsMN3TzGOHGYc9AAFEjZqcGTBurg&s" alt="Raqueta de Tenis">
+            <p>Raqueta de fibra de carbono para mayor control y potencia.</p>
+            <p><strong>Precio: $80</strong></p>
+            <button onclick="comprar('Raqueta de Tenis', 80)">Comprar</button>
+        </div>
+    </div>
+    
+    <h2>Realiza tu Pedido</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="producto">Selecciona un producto:</label>
+        <select id="producto" name="producto">
+            <option value="balon">Balón de Fútbol - $30</option>
+            <option value="guantes">Guantes de Boxeo - $45</option>
+            <option value="raqueta">Raqueta de Tenis - $80</option>
+        </select>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+        
+        <button type="submit">Realizar Pedido</button>
+    </form>
+    
+    <script>
+        function comprar(producto, precio) {
+            alert(Has comprado: ${producto} por $${precio});
+        }
+    </script>
+</body>
+</html>
